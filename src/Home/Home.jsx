@@ -2,8 +2,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
 import { useNavigate } from 'react-router-dom'
-
-
+import Header from "./Header/header";
+import Main from "./Main/Main";
+import "./Home.css"
 const socket = io.connect("http://localhost:3001");
 
 function Home() {
@@ -45,7 +46,11 @@ function Home() {
   // }, [socket]);
 
   return (
-    <div>
+    <>
+      <div className="Home">
+      <Header/>
+      <Main/>
+      </div>
       {/* <input
         type="text"
         onChange={(e) => inputChange(e.target.value)}
@@ -59,8 +64,8 @@ function Home() {
       </button>
       <hr />
       <h1>{receiveMessage}</h1> */}
-      home
-    </div>
+   
+   </>
   );
 }
 
