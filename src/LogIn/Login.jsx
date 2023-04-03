@@ -20,36 +20,33 @@ function Login() {
     setEmail('')
     setPassword('')
   }
-  if(isSuccess){
-    window.location.href = '/Home'
-  }
   if(isLoading){
     return (  
       <Loading/>
     )
   }
   if(data){
-    console.log(data)
     if(data.status === 200){
+      window.location.href = '/Home'
       localStorage.setItem('token' , data.token)
       localStorage.setItem('messageId' , data.messageId)
     }
-    else{
-      alert(data.message)
-      window.location.reload()
-    }
-  }
-  if(isError){
-    console.log(error)
-    alert(JSON.stringify('Error ' + error.originalStatus + ' , Please restart the page ( F5 or Ctrl + R )'))
   }
   return (
     <div className='LoginFormContainer'>
         <form onSubmit={formSubmit} className={'LoginForm'}>
-          <input type="text"  name='email' placeholder='Email . . .' onChange={(e) => setEmail(e.target.value)} value={email}/>
-          <input type="password"  name='password' placeholder='Password . . .' onChange={(e) => setPassword(e.target.value)} value={password}/>
-          <button type='submit'>Log In</button>
-          <p>Don't have an account ? <NavLink to={'/Register'}>Register ?</NavLink></p>
+          <h1 className='LoginFormContainerH1'>Sign In</h1>
+          <div className='LoginFormContainerWrappers'>
+            <p>Email</p>
+            <input type="text"  name='email' placeholder='Email . . .' onChange={(e) => setEmail(e.target.value)} value={email}/>
+          </div>
+          <div className='LoginFormContainerWrappers'>
+            <p>Password</p>
+            <input type="password"  name='password' placeholder='Password . . .' onChange={(e) => setPassword(e.target.value)} value={password}/>
+          </div>
+          <span className='LoginFormContainerWrapperErr'>{data ? data.status !== 200 ? `${data.message}` : '' : isError ? JSON.stringify('Error ' + error.originalStatus + ' , Please restart the page ( F5 or Ctrl + R )') : ''}</span>
+          <button type='submit'>Sign in</button>
+          <NavLink className={'LoginFormContainerNavLink'} to={'/Register'}>Create account</NavLink>
         </form>
     </div>
   )

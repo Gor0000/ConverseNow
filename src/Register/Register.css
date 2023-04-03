@@ -1,52 +1,107 @@
 .RegisterFormContainer{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #252838;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .RegisterForm{
-    width: 380px;
-    height: 300px;
+    width: 340px;
+    height: 494px;
     display: flex;
     flex-direction: column; 
-    justify-content: space-between;
-    padding: 20px;
-    background-color: rgb(29, 29, 29);
+    align-items: center;    
+    background-color: #343A4F;
     border-radius: 5px;
 }
 
-.RegisterForm input,
-.RegisterForm button{
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: .3s;
-    background-color: white;
-    color: black;
+.RegisterFormContainerH1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #E2E2E4;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.RegisterFormContainerWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .RegisterForm input:focus{
     outline: none;
 }
 
-.RegisterForm p{
+.RegisterForm input{
+    width: 280px;
+    height: 33px;
+    background: #252838;
+    border-radius: 5px;
+    border: none;
+    padding: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #E2E2E4;
+    margin-bottom: 16px;
+}
+
+.RegisterForm button{
+    width: 280px;
+    height: 37px;
+    margin-top: 84px;
+    background: #3369F3;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
     text-align: center;
-    color: white;
-}
-
-.RegisterForm p a{
-    color: green;
-}
-
-.RegisterForm button:hover{
-    background-color: black;
-    color: white;
+    color: #E2E2E4;
+    border: none;
     cursor: pointer;
+}
+
+.RegisterFormContainerNavLink{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    color: #3369F3;
+    margin-top: 14px;
+}
+
+.RegisterForm input::placeholder{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #9898B0;
+}
+
+.RegisterFormContainerWrapper p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+    color: #9898B0;
+    margin-bottom: 8px;
+}
+
+.RegisterFormContainerWrapperErr{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #F44D4D;
+    height: 8px;
 }

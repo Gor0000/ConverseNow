@@ -25,8 +25,6 @@ function Register() {
     )
   }
   if(isError){
-    console.log(error)
-    alert(JSON.stringify('Error ' + error.originalStatus + ' , Please restart the page ( F5 or Ctrl + R )'))
   }
   if(isSuccess){
     window.location.href = 'Login'
@@ -34,11 +32,22 @@ function Register() {
   return (
     <div className='RegisterFormContainer'>
         <form onSubmit={formSubmit} className={'RegisterForm'}>
-          <input type="email"  name='email' placeholder='Email . . .' onChange={(e) => setEmail(e.target.value)} value={email}/>
-          <input type="text"  name='password' placeholder='Name . . .' onChange={(e) => setName(e.target.value)} value={name}/>
-          <input minLength={6} maxLength={12} type="password"  name='password' placeholder='Password . . .' onChange={(e) => setPassword(e.target.value)} value={password}/>
-          <button type='submit'>Log In</button>
-          <p>Have an account ? <NavLink to={'/Login'}>Login ?</NavLink></p>
+          <h1 className='RegisterFormContainerH1'>Sign up</h1>
+          <div className='RegisterFormContainerWrapper'>
+            <p>Email</p>
+            <input type="email"  name='email' placeholder='Email . . .' onChange={(e) => setEmail(e.target.value)} value={email}/>
+          </div>
+          <div className='RegisterFormContainerWrapper'>
+            <p>Name</p>
+            <input type="text"  name='password' placeholder='Name . . .' onChange={(e) => setName(e.target.value)} value={name}/>
+          </div>
+          <div className='RegisterFormContainerWrapper'>
+            <p>Password</p>
+            <input minLength={6} maxLength={12} type="password"  name='password' placeholder='Password . . .' onChange={(e) => setPassword(e.target.value)} value={password}/>
+          </div>
+          <span className='RegisterFormContainerWrapperErr'>{isError ? JSON.stringify('Error ' + error.originalStatus + ' , Please restart the page ( F5 or Ctrl + R )') : ''}</span>
+          <button type='submit'>Next</button>
+          <NavLink className={'RegisterFormContainerNavLink'} to={'/Login'}>Sign in</NavLink>
         </form>
     </div>
   )
