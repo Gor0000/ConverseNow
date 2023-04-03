@@ -11,6 +11,9 @@ function Register() {
   const [name , setName] = useState('')
   const navigate = useNavigate();
   const [registerUser , {isLoading , isSuccess , isError , error}] = useRegisterUserMutation()
+  useEffect(() => {
+    localStorage.clear()
+  } , [])
   const formSubmit = async (e) => {
     e.preventDefault();
     await registerUser({
