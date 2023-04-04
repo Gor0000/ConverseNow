@@ -1,63 +1,70 @@
-.HomeHeader{
-    width: 310px;
-    height: 100%;
-    background-color: #252838;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
+.HomeHeader {
+  width: 310px;
+  height: 100%;
+  background-color: #252838;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
-.wrapperContainer{
-    width: 100%;
-    height: 102px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-bottom: 2px solid #343A4F;
-    padding: 21px 10px 14px 10px;
+.wrapperContainer {
+  width: 100%;
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 2px solid #343a4f;
+  padding: 21px 10px 14px 10px;
 }
 
-.wrapperContainerNavLinkDiv{
-    width: 290px;
-    height: 12px;
-    display: flex;
-    justify-content: flex-end;
+.wrapperContainerNavLinkDiv {
+  width: 290px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burgerMenuProfile {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  color: #9898b0;
+  display: flex;
+  align-items: center;
 }
 
-.wrapperContainerNavLink{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    color: #9898B0;
-    display: flex;
-    align-items: center;
-
+.wrapperContainerNavLink {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: #9898b0;
+  display: flex;
+  align-items: center;
 }
-.iconProfile{
-    margin-left: 8px;
+.iconProfile {
+  margin-left: 8px;
 }
-.searchProfile{
-    width: 290px;
-    height: 32px;
-    background: #343A4F;
-    border-radius: 5px; 
-    border: none;
-    padding-left: 16px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 13px;
-    color: #E2E2E4;
+.searchProfile {
+  width: 290px;
+  height: 32px;
+  background: #343a4f;
+  border-radius: 5px;
+  border: none;
+  padding-left: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #e2e2e4;
 }
 
-.searchProfile::placeholder{
-    color: #9898B0;
+.searchProfile::placeholder {
+  color: #9898b0;
 }
 
-.searchProfile:focus{
-    outline: none;
+.searchProfile:focus {
+  outline: none;
 }

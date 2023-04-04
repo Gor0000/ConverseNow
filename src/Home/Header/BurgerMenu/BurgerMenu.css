@@ -1,0 +1,24 @@
+.BurgerMenuHeader {
+  padding: 15px 15px 5px 15px;
+  background: #252838;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+}
+.BurgermenuComponets {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.BurgermenuComponets svg {
+  font-size: 16px;
+  height: auto;
+  color: #3369f3;
+}
+.BurgerMenuNavLink {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 13px;
+  color: #e2e2e4;
+}
