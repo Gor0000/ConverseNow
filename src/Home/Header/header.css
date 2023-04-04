@@ -1,0 +1,46 @@
+.HomeHeader{
+    width: 23%;
+    height: 100%;
+    background-color: #252838;
+    
+}
+.wrapperContainer{
+    width: 100%;
+    height: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #343A4F;
+}
+.wrappeProfil{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+.wrappeProfil a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #9898B0;
+}
+.iconProfile{
+    margin-left: 0.5vw;
+}
+.searchProfile{
+    width: 90%;
+    height: 32px;
+    background: #343A4F;
+    border-radius: 5px; 
+    border: none;
+    padding-left: 1vw;
+}
