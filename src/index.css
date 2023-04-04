@@ -22,3 +22,8 @@ a{
 button{
     user-select: none;
 }
+
+input::placeholder{
+    user-select: none;
+    -webkit-user-drag: none;
+}

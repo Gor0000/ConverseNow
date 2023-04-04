@@ -6,10 +6,8 @@ function header() {
   return (
         <header className='HomeHeader'>
             <div className='wrapperContainer'>
-                <div className='wrappeProfil'>
-                  <NavLink>Profile <AiOutlineRight className='iconProfile' /></NavLink>
+                  <div className='wrapperContainerNavLinkDiv'><NavLink className={'wrapperContainerNavLink'}>Profile <AiOutlineRight className='iconProfile' /></NavLink></div>
                   <input type="text" className='searchProfile' placeholder='Search'/>
-                </div>
             </div>
         </header>
   )
