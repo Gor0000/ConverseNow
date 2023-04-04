@@ -3,9 +3,8 @@ import Home from './Home/Home'
 import Page404 from './404/Page404'
 import Login from './LogIn/Login';
 import Register from './Register/Register';
-
+  
 function App() {
-
   return (
     <Routes>
       <Route path='/' element={<Navigate to={'/Home'}/>}/>

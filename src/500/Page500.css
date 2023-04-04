@@ -1,0 +1,45 @@
+.page500Container{
+    height: 100vh;
+    width: 100%;
+    background-color:#343A4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .page500Wrapper{
+    width: 293px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .page500Wrapper h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #E2E2E4;
+  }
+  
+  .page500Wrapper p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #E2E2E4;
+    margin-top: 20px;
+  }
+  
+  .page500Wrapper a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
+    color: #3369F3;  
+    margin-top: 69px;
+  }

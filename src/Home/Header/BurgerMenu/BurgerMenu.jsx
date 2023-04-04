@@ -1,18 +1,18 @@
 import React from "react";
 import "./BurgerMenu.css";
 import BurgerMenuComponets from "./BurgerMenuComponets";
-import { AiFillAndroid } from "react-icons/ai";
+import { IoMdSettings } from "react-icons/io";
 
 function BurgerMenu() {
   return (
     <div className="BurgerMenuHeader">
       <BurgerMenuComponets
-        icone={<AiFillAndroid />}
-        titile={"Add user"}
+        icone={<IoMdSettings />}
+        titile={"Settings"}
         navLink={"/addUser"}
       />
       <BurgerMenuComponets
-        icone={<AiFillAndroid />}
+        icone={<IoMdSettings />}
         titile={"Add user"}
         navLink={"/addUser"}
       />
