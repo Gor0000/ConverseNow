@@ -10,6 +10,10 @@
     border-radius: 12px;
 }
 
+.SearchUser.animation{
+    animation: opacity .4s ease-in-out;
+}
+
 .SearchUserP{
     text-align: center;
     font-style: normal;
@@ -17,4 +21,20 @@
     font-size: 9px;
     line-height: 9px;
     color: #9898B0;
+}
+
+#animationOpen{
+    animation: opacityOpen .4s ease-in-out;
+}
+
+@keyframes opacity {
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes opacityOpen {
+    0%{
+        opacity: 0;
+    }
 }

@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 function SearchUser(props) {
   return (
-    <div className="SearchUser">
+    <div className={props.animation ? 'SearchUser animation' : 'SearchUser'} id={props.animationOpen ? 'animationOpen' : ''}>
       <p className="SearchUserP">
         {props.searchData.message ? props.searchData.message : ''}
       </p>

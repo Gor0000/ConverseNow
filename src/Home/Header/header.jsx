@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from "react";
+import React, { useState , useEffect , useRef } from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
@@ -9,25 +9,32 @@ import img from "./ChatsHeader/ddd.png";
 import SearchUser from "./SearchUser/SearchUser";
 import { useGetUsersMutation } from "../../store/features/usersApi";
 import { useSelector , useDispatch } from "react-redux"; 
-import { getUser } from "../../store/slices/userSearchSlice.js";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
+  const [animation, setAnimation] = useState(false);
+  const [animationOpen, setAnimationOpen] = useState(false);
   const [inputValue, setInputValue] = useState('');
   let [timeout , setTimeoutFunc] = useState(null)
-  const searchedUser = useSelector((state) => state.searchUser.user)
   const [getUser , {data , isLoading}] = useGetUsersMutation()
+  const searchResult = useRef()
   function handle() {
     setIsActive(!isActive);
   }
   const handleFocus = () => {
+    setAnimationOpen(true)
     setIsFocused(true);
+    setTimeout(() => {
+      setAnimationOpen(false)
+    } , 300)
   };
   const handleBlur = () => {
+    setAnimation(true)
     setTimeout(() => {
+      setAnimation(false)
       setIsFocused(false);
-    } , 100)
+    } , 300)
   };
   const inputValueChange = (e) => {
     setInputValue(e)
@@ -50,7 +57,7 @@ function Header() {
         </div>
         {isActive ? <BurgerMenu /> : ""}
         <input value={inputValue} onChange={(e) => {inputValueChange(e.target.value)}} onFocus={handleFocus} onBlur={handleBlur} type="text" className="searchProfile" placeholder="Search" />
-        {isFocused ? <SearchUser searchData={data ? data : []} isLoading={isLoading}/> : ''}
+        {isFocused ? <SearchUser animationOpen={animationOpen} animation={animation} searchData={data ? data : []} isLoading={isLoading}/> : ''}
       </div>
       <div className="HomeHeaderChats">
         <ChatsHeader
