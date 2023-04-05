@@ -1,5 +1,5 @@
 import React, { useState , useEffect , useRef } from "react";
-import "./Header.css";
+import "./header.css";
 import { NavLink } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
 import { IoIosMenu } from "react-icons/io";
@@ -66,6 +66,13 @@ function Header() {
           name={"Hovhannes"}
           message={"Hello"}
           sendTime={"10:49"}
+        />
+         <ChatsHeader
+          profileImg={img}
+          path={"/"}
+          name={"Gor"}
+          message={"indi naxuy"}
+          sendTime={"11:11"}
         />
       </div>
     </header>
