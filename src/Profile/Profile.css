@@ -92,15 +92,15 @@
 .ProfileEmail{
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 15px;
     color: #9898B0;    
 }
 .ProfileEmailName{
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 15px;
     text-align: right;
     color: #E2E2E4;
 }
@@ -114,15 +114,15 @@
 .ProfileChnage{
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 15px;
     color: #3369F3;
 }
 .ProfileLogOut{
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 15px;
     color: #F44D4D;
 }
 
