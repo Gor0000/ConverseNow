@@ -32,7 +32,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 64px;
 }
 .ProfileStatusDiv{
     width: 510px;
@@ -41,6 +40,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-left: 64px;
 }
 .ProfileNameImgDiv{
     height: 167px;
@@ -58,10 +58,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    border: 3px solid white;
 }
 
 .ProfileNameImgDivImg{
-    width: 100%;
     height: 100%;
 }
 
@@ -132,4 +133,85 @@
 
 .ProfileChangeDiv .ProfileInformationDiv:nth-child(3){
     border-bottom: none;
+}
+
+.ProfileChangeImgBgBlur{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.4; 
+    z-index: 1000;
+}
+
+.ProfileChangeImgContainerWrapper{
+    width: 340px;
+    height: 257px;
+    top: 236px;
+    position: fixed;
+    background: #343A4F;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+    z-index: 1001;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ProfileChangeImgContainerWrapperTitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #E2E2E4;    
+}
+
+
+.ProfileChangeImgContainerWrapperSelectFile{
+    width: 122px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.ProfileChangeImgContainerWrapperSelectFile input{
+    opacity: 0;
+    width: 122px;
+    height: 32px;
+    z-index: 5;
+    position: relative;
+}
+
+.ProfileChangeImgContainerWrapperSelectFile p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #3369F3;
+    position: relative;
+    top: -32px;
+    width: 122px;
+    height: 32px;
+}
+
+.ProfileChangeImgContainerWrapperButton{
+    width: 240px;
+    height: 37px;
+    background: #3369F3;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
 }

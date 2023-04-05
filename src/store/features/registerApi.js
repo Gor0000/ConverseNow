@@ -10,8 +10,15 @@ export const registerApi = createApi({
                 method : 'POST', 
                 body
             })
+        }),
+        changeProfileImage : build.mutation({
+            query : (body) => ({
+                url : 'auth/register/changeProfileImg',
+                method : 'PATCH', 
+                body
+            })
         })
     })
 })
 
-export const {useRegisterUserMutation} = registerApi
+export const {useRegisterUserMutation , useChangeProfileImageMutation} = registerApi

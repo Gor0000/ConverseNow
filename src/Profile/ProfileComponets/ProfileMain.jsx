@@ -1,42 +1,47 @@
-import React from "react";
+import React , { useEffect, useState } from "react";
 import "../Profile.css";
-import ProfileImg from "../../img/Group 203.png";
 import { NavLink } from "react-router-dom";
+import ProfileChangeImg from './ProfileChangeImg'
 
-function ProfileMain() {
+function ProfileMain(props) {
+  const [changeImg , setChangeImg] = useState(false)
+  const imgChangeHandleOpen = () => {
+    setChangeImg(!changeImg)
+  }
   return (
     <div className="ProfileMainDiv">
       <div className="ProfileStatusDiv">
         <div className="ProfileNameImgDiv">
-          <div className="ProfileNameImgDivImgDiv">
-            <img className="ProfileNameImgDivImg" src={ProfileImg} alt="" />
+          <div className="ProfileNameImgDivImgDiv" onClick={imgChangeHandleOpen}>
+            <img className="ProfileNameImgDivImg" src={props.data.profileImg} alt="" />
           </div>
-          <p className="ProfileName">Иван</p>
+          {changeImg ? <ProfileChangeImg rerenderComponent={props.rerenderComponent} setRerenderComponent={props.setRerenderComponent} clickFunc={imgChangeHandleOpen}/> : ''}
+          <p className="ProfileName">{props.data.name}</p>
         </div>
         <div className="ProfileUserproprtyDiv">
           <div className="ProfileInformationDiv ProfileEmailDiv">
             <p className="ProfileEmail">Email</p>
-            <p className="ProfileEmailName">pochta@yandex.ru</p>
+            <p className="ProfileEmailName">{props.data.email ? props.data.email : '- - -'}</p>
           </div>
           <div className="ProfileInformationDiv ProfileLoginDiv">
             <p className="ProfileEmail">Login</p>
-            <p className="ProfileEmailName">ivanivanov </p>
+            <p className="ProfileEmailName">{props.data.login ? props.data.login : '- - -'}</p>
           </div>
           <div className="ProfileInformationDiv ProfileNameDiv">
             <p className="ProfileEmail">Name</p>
-            <p className="ProfileEmailName">Иван</p>
+            <p className="ProfileEmailName">{props.data.name ? props.data.name : '- - -'}</p>
           </div>
           <div className="ProfileInformationDiv ProfileNameDiv">
             <p className="ProfileEmail">Last name</p>
-            <p className="ProfileEmailName">Иванов</p>
+            <p className="ProfileEmailName">{props.data.lname ? props.data.lname : '- - -'}</p>
           </div>
           <div className="ProfileInformationDiv ProfileNameDiv">
             <p className="ProfileEmail">Display name</p>
-            <p className="ProfileEmailName">Иван</p>
+            <p className="ProfileEmailName">{props.data.displayName ? props.data.displayName : '- - -'}</p>
           </div>
           <div className="ProfileInformationDiv ProfileNameDiv">
             <p className="ProfileEmail">Phone</p>
-            <p className="ProfileEmailName">+7 (909) 967 30 30</p>
+            <p className="ProfileEmailName">{props.data.phone ? props.data.phone : '- - -'}</p>
           </div>
         </div>
         <div className="ProfileChangeDiv">

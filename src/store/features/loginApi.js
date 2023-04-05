@@ -10,8 +10,15 @@ export const logInApi = createApi({
                 method : 'POST', 
                 body
             })
+        }),
+        decodeJwt : build.mutation({
+            query : (body) => ({
+                url : 'auth/Profile',
+                method : 'POST', 
+                body
+            })
         })
     })
 })
 
-export const {useLoginUserMutation} = logInApi
+export const {useLoginUserMutation , useDecodeJwtMutation} = logInApi
