@@ -1,7 +1,10 @@
 import React from "react";
 import "./BurgerMenu.css";
 import BurgerMenuComponets from "./BurgerMenuComponets";
-import { IoMdSettings } from "react-icons/io";
+import { IoMdSettings , IoMdExit } from "react-icons/io";
+import { HiUserGroup } from "react-icons/hi";
+import { MdHelpCenter } from "react-icons/md";
+import { RiFeedbackFill, RiStickyNoteFill } from "react-icons/ri";
 
 function BurgerMenu() {
   return (
@@ -12,9 +15,29 @@ function BurgerMenu() {
         navLink={"/addUser"}
       />
       <BurgerMenuComponets
-        icone={<IoMdSettings />}
-        titile={"Add user"}
-        navLink={"/addUser"}
+        icone={<HiUserGroup />}
+        titile={"Contacts"}
+        navLink={"/Contacts"}
+      />
+      <BurgerMenuComponets
+        icone={<RiStickyNoteFill />}
+        titile={"Notes"}
+        navLink={"/Notes"}
+      />
+      <BurgerMenuComponets
+        icone={<MdHelpCenter />}
+        titile={"Help"}
+        navLink={"/Help"}
+      />
+      <BurgerMenuComponets
+        icone={<RiFeedbackFill />}
+        titile={"Feedback"}
+        navLink={"/Feedback"}
+      />
+      <BurgerMenuComponets
+        icone={<IoMdExit />}
+        titile={"Log Out"}
+        navLink={"/Login"}
       />
     </div>
   );

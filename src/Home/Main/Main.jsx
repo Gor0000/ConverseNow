@@ -1,13 +1,11 @@
 import React from "react";
 import "./Main.css";
-import BurgerMenu from "../Header/BurgerMenu/BurgerMenu";
 
 function Main() {
   return (
     <main className="main">
       <div className="mainNoNeDiv">
-        <p>Выберите чат чтобы отправить сообщение</p>
-        
+        <p>Select a chat to send a message</p>
       </div>
     </main>
   );

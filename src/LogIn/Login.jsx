@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 function Login() {
   const [email , setEmail] = useState('')
   const [password , setPassword] = useState('')
-  const [loginUser , {isLoading , isSuccess , isError , error , data}] = useLoginUserMutation()
+  const [loginUser , {isLoading , isError , error , data}] = useLoginUserMutation()
   useEffect(() => {
     localStorage.clear()
   } , [])

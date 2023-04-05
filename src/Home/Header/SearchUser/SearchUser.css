@@ -1,0 +1,20 @@
+.SearchUser{
+    width: 290px;
+    height: auto;
+    padding: 10px;
+    position: fixed;
+    left: 10px;
+    top: 87px;
+    background: #252838;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+}
+
+.SearchUserP{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+    color: #9898B0;
+}
