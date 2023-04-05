@@ -1,0 +1,114 @@
+.ProfileStatic{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ProlfileLeftDiv{
+   width: 3.5%;
+   height: 100%;
+   background-color: #252838;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.ProlfileLeftIcone{
+    width: 30px;
+    height: 30px;
+    background-color: #3369F3;
+    padding:5px;
+    color: #E2E2E4;
+    border-radius: 60%;
+}
+.ProfileMainDiv{
+    width: 100%;
+    height: 100%;
+    background-color:  #343A4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ProfileStatusDiv{
+    width: 43%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+.ProfileNameImgDiv{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.ProfileNameImgDiv img{
+    width: 130px;
+    height: 130px;
+    
+}
+.ProfileName{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #E2E2E4;
+}
+.ProfileUserproprtyDiv{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.ProfileInformationDiv{
+    width: 80%;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #4C546F;
+}
+.ProfileEmail{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #9898B0;
+}
+.ProfileEmailName{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: right;
+    color: #E2E2E4;
+}
+.ProfileChangeDiv{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.ProfileChnage{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #3369F3;
+}
+.ProfileLogOut{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: #F44D4D;
+}

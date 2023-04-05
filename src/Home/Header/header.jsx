@@ -1,5 +1,5 @@
 import React, { useState , useEffect , useRef } from "react";
-import "./Header.css";
+import "./header.css";
 import { NavLink } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
 import { IoIosMenu } from "react-icons/io";

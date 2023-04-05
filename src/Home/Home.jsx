@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
 import { useNavigate } from 'react-router-dom'
-import Header from "./Header/Header";
+import Header from "./Header/header";
 import Main from "./Main/Main";
 import "./Home.css"
 const socket = io.connect("http://localhost:3001");
