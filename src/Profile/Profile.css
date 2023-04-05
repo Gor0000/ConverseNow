@@ -2,22 +2,26 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    
 }
 .ProlfileLeftDiv{
-   width: 3.5%;
+   width: 64px;
    height: 100%;
    background-color: #252838;
    display: flex;
    align-items: center;
    justify-content: center;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 999;
 }
 .ProlfileLeftIcone{
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     background-color: #3369F3;
-    padding:5px;
+    padding: 7px;
     color: #E2E2E4;
     border-radius: 60%;
 }
@@ -28,30 +32,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding-left: 64px;
 }
 .ProfileStatusDiv{
-    width: 43%;
-    height: 70%;
+    width: 510px;
+    height: 551px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
 }
 .ProfileNameImgDiv{
-    height: 160px;
+    height: 167px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-.ProfileNameImgDiv img{
+
+.ProfileNameImgDivImgDiv{
     width: 130px;
     height: 130px;
-    
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.ProfileNameImgDivImg{
+    width: 100%;
+    height: 100%;
+}
+
 .ProfileName{
     font-style: normal;
     font-weight: 700;
@@ -60,27 +73,28 @@
     text-align: center;
     color: #E2E2E4;
 }
+
 .ProfileUserproprtyDiv{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
 }
 .ProfileInformationDiv{
-    width: 80%;
-    height: 2vw;
+    width: 100%;
+    height: 24px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #4C546F;
+    border-bottom: 1px solid #4C546F;
+    margin-bottom: 10px;
 }
+
 .ProfileEmail{
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 13px;
-    color: #9898B0;
+    color: #9898B0;    
 }
 .ProfileEmailName{
     font-style: normal;
@@ -91,12 +105,11 @@
     color: #E2E2E4;
 }
 .ProfileChangeDiv{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 .ProfileChnage{
     font-style: normal;
@@ -111,4 +124,12 @@
     font-size: 13px;
     line-height: 13px;
     color: #F44D4D;
+}
+
+.ProfileInformationDiv:nth-child(6){
+    border-bottom: none;
+}
+
+.ProfileChangeDiv .ProfileInformationDiv:nth-child(3){
+    border-bottom: none;
 }

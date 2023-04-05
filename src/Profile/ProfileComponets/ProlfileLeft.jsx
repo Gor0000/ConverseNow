@@ -7,7 +7,7 @@ function ProlfileLeft() {
         <div className='ProlfileLeftDiv'>
             <NavLink to={"/Home"}>
               <AiOutlineArrowLeft className='ProlfileLeftIcone'/>
-              </NavLink>
+            </NavLink>
         </div>
   )
 }

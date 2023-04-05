@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import Header from "./Header/header";
 import Main from "./Main/Main";
 import "./Home.css"
-const socket = io.connect("http://localhost:3001");
+// const socket = io.connect("http://localhost:3001");
 
 function Home() {
   // const [message, setMessage] = useState("");
